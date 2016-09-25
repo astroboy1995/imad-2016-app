@@ -16,6 +16,10 @@ app.get('/article-one',function(req,res){
     res.send('Article one has been requested and will be searved heare');
 });
 
+app.get('/Home',function(req,res){
+    res.send('Home page is comming soon');
+});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
