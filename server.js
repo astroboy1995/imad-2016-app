@@ -5,6 +5,22 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleone = {
+  title:' Article-one|heare is the article one',
+  heading:'This is article one',
+  date:'26th september, 2016',
+  content:  
+  `<pr>
+        This is my first article in my imad console.<br>
+                
+    </pr>
+     <pr>
+        And I think I'm learning a lot and having fun.
+    </pr>`
+};
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
